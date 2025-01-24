@@ -1,0 +1,99 @@
+header .collapse .nav-item .active{
+    color: green !important;
+}
+.container{
+    max-width: 1140px;
+}
+header .collapse .nav-item a{
+    position: relative;
+}
+ header .collapse .nav-item a::before{
+    content: "";
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: all 0.5s;
+ }
+ header .collapse .nav-item .active::before{
+    width: 100%;
+ }
+header .nav-item a:hover::before{
+    width: 100%;
+}
+
+/* .cyber_carousel .carousel_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+.cyber_carousel .carousel_text img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.cyber_carousel .carousel_text h2{
+    font-size: 56px;
+}
+/* .cyber_carousel .carousel-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(39,43,54,.5);
+   
+} */
+
+/* cách 2 tạo lớp phủ */
+.cyber_carousel .carousel_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(39,43,54,.5);
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.cyber_carousel .carousel-indicators button{
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.cyber_carousel .carousel-indicators  button.active{
+    background-color: #35a22c;
+}
+.cyber_project .nav-pills .nav-link.active{
+    background-color: green;
+    border-color: green !important;
+}
+.cyber_project .project_content .nav-link{
+    color: black;
+    padding: 10px 15px;
+    margin: 15px;
+    border: 2px solid black;
+}
+.cyber_project .project_item .item_text{
+    
+    border: 1px solid transparent;
+    border-top: none;
+    transition: all 1s;
+}
+.cyber_project .project_item:hover .item_text{
+    border-color: #35a22c;
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+}
